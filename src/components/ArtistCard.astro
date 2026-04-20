@@ -1,10 +1,26 @@
 ---
 //@ts-nocheck
-const { artist } = Astro.props;
+const { artist, img, name, date_time } = Astro.props;
 ---
 
 <article>
-  <img src={artist.img} alt="" />
+  <img src={artist.img} alt="billede" />
   <h2>{artist.name}</h2>
   <p>Tid og dato: {artist.date_time}</p>
 </article>
+
+
+<style>
+ img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  border-radius: 999px;
+}
+
+.name {
+  align-items: center;
+}
+
+</style>

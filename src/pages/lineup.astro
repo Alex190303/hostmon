@@ -17,8 +17,60 @@ const data = await fetch(url, options).then((res) => res.json());
 console.log(data);
 ---
 
+<html lang="en">
+  <header> 
+  </header>
+
+  <body>
+
 <Layout title="Lineup">
-  <h1>Artister</h1>
+
+  <div class="bgcolorlineup">
+
+  <h1>Line Up</h1>
+
+     <section class="filtrering">
+
+      <h4>Fredag</h4>
+      <h4>Lørdag</h4>
+      <h4>Alle Dage</h4>
+
+    </section>
+
+
+<div class="artistgrid">
 
   {data.map((artist) => <Artist artist={artist} />)}
+
+</div>
 </Layout>
+
+
+</div>
+
+  </body>
+</html>
+
+
+<style>
+  .filtrering {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 220px;
+    padding-left: 220px;
+  }
+
+
+  /*@media (max-width: 700px) {*/
+  .artistgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+      gap: 4.5rem;
+  margin: 0 auto;
+  }
+
+  /*}*/
+
+
+</style>
