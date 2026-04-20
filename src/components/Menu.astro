@@ -1,4 +1,5 @@
 ---
+
 ---
 
 <header class="site-header">
@@ -7,47 +8,55 @@
       <li><a href="/">Forside</a></li>
       <li><a href="/lineup">Line up</a></li>
       <li><a href="/maaltidet">Måltidet</a></li>
-      <li><a href="/praktisk">Praktisk info puj</a></li>
+      <li><a href="/praktisk">Praktisk info</a></li>
     </ul>
 
-    <a href="/billet" class="cta">Køb din billet</a>
+    <button class="cta">Køb din billet</button>
   </nav>
 </header>
 
 <style>
-.site-header {
- 
-  top: 0;
-  width: 100%;
-  background: linear-gradient(to bottom, #6e6e6e, transparent);
-  z-index: 1000;
-}
+  .site-header {
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #4c4c4c, transparent);
+    z-index: 1000;
+  }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-}
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
 
-.nav-left {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
+  .nav-left {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+  }
 
-.nav-left a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
+  .nav-left a {
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
 
-.cta {
-  border: 2px solid #d4ff00;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
+  .nav-left a:hover {
+    color: #e5ff00;
+  }
+
+  .cta {
+    border: 4px solid #d4ff00;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #757474;
+    font-size: 1.1rem;
+  }
+  .cta:hover {
+    background-color: black;
+  }
 </style>
