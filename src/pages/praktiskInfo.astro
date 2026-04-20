@@ -7,4 +7,118 @@ import Layout from "../layouts/Layout.astro";
   <img src="" alt="">
   <h1>Praktisk info</h1>
   </div>
+
+<section class="info-section">
+  <div class="info-boks">
+
+    <div class="titel-boks">
+      <h2>OM PLADSEN</h2>
+    </div>
+
+   <div class="tekstafsnit">
+<p>Høst Møn er tilbage! Hold din øl! Hent din pung! I sidste weekend af august holder vi Høst Møn på Masnedøfortet. Det er lige uden for Vordingborg, så transporten er lettere, bølgerne er højere, og udsigten er stadigvæk Falster. <br><br> Fra Hårbølle Strand kunne man se en lille hyggelig båd og måske en vindmølle. Herfra kan du se kæmpefærger og infrastruktur, som vore forældre lavede det. De to Storstrømsbroer indrammer vores nye festivalsite, og man kan stadig bade, bo i første række til havet, falde i søvn til vandet og electro fra natteteltet - og vågne op med en udsigt, der er en naturlig del af programmet. <br><br> Overnatning på campingpladsen er inkluderet i prisen, og der er gode muligheder for at finde havudsigt på det store område. Vi anbefaler, at man kommer i god tid – og at man ikke lægger sig lige foran scenen.
+</p>
+
+   </div>
+
+  </div>
+
+</section>
+
+<div class="image-grid">
+  <img src="public/imgs/info_img1.jpg" class="img1" alt="Et billede af det grønne naturområde hvor Høst Møn er placeret.">
+  <img src="public/imgs/info_img2.jpg" class="img2" alt="Et billede af udsigten">
+  <img src="public/imgs/info_img3.jpg" class="img3" alt="Et billede af to personer fra Høst Møn der sidder tæt sammen">
+  <img src="public/imgs/info_img4.jpg" class="img4" alt="Et billede af udsigten til broen og havet">
+
+</div>
+
+<section class="info-section2">
+<div class="tekstafsnit2">
+  <p>Der er badefaciliteter, og morgenmaden bliver serveret på sengen – hvis du selv trækker din luftmadras med op til langbordet. <br><br> Der vil være et ikke lige så begrænset antal autocamperpladser til salg i 2026, som der plejer, men vi har desværre stadig ikke mulighed for at tilbyde strøm, vand og afløb til campingvogne. Det er praktisk talt umuligt, og vi beklager meget. Billetterne koster 200 kroner. <br><br> Der er masser af parkeringsplads, men hvis du kommer fra København, opfordrer vi i den grad til at tage offentlig transport til Vordingborg eller vores dedikerede bus. Den kører fra Hovedbanen fredag klokken 12.00 og 16.00, og den kører tilbage søndag klokken 13.00.</p>
+
+</div>
+
+
+</section>
+
 </Layout>
+
+<style>
+.info-boks{
+  background-color:#D0D0D0;
+  max-width: 700px;
+  padding: 30px;
+   margin-bottom: 20px;
+
+}
+
+.titel-boks{
+  background-color: #787878;
+  display: inline-block;
+  padding: 15px 60px;
+  margin-bottom: 30px;
+}
+
+.tekstafsnit p{
+  line-height: 1.6;
+  max-width: 65ch;
+  margin-bottom: 200px;
+  
+}
+
+.image-grid{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+
+.img1{
+  width: 70%;
+  grid-column: 1 / 5;
+  grid-row: 2 / 5;
+}
+
+.img2{
+  width: 80%;
+  grid-column: 3 / 7;
+  grid-row: 1 / 4;
+}
+
+.img3{
+  width: 80%;
+  grid-column: 3 / 7;
+  grid-row: 4 / 6;
+}
+
+.img4{
+  width: 60%;
+  grid-column: 1 / 5;
+  grid-row: 5 / 7;
+}
+
+
+
+.info-section2{
+   background-color:#D0D0D0;
+  max-width: 700px;
+  padding: 30px;
+  margin-left: auto;
+  margin-top: 20px;
+  
+}
+
+.tekstafsnit2 p{
+  line-height: 1.6;
+  max-width: 65ch;
+
+  
+}
+
+@media (min-width: 800px){
+
+
+}
+
+</style>
