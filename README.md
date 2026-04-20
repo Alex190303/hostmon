@@ -1,4 +1,4 @@
-# Astro Starter Kit: Minimal
+# Teknisk dokumentation: Høst Møn
 
 ```sh
 npm create astro@latest -- --template minimal
