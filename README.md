@@ -1,5 +1,43 @@
 # Teknisk dokumentation: Høst Møn
 
+## Om projektet:
+Tema 9:
+Vi har i dette tema udarbejdet vores egen database som indeholder oplysninger om kunstnerens ID, billede samt dato og tidspunkt. Løsningen er udviklet med Javaskript, CSS og Html.
+
+## Navigationen af vores løsning:
+- Forside
+- Menu med oversigt over diverse sider
+- Vælg en side
+- Se hele lineup
+- Sorter og filtrer efter alferbetisk navne og/eller optræden kun lørdag eller kun fredag
+- Køb din billet
+- Udfyld den via. et vidersendt link til billetto.dk
+- Yderligere sider om “Praktisk info” eller "Måltidet" hvis brugeren er interesseret i at vide mere om Høst Møn
+- Footer med adresse, kontaktinformationer og sociale medier
+
+## Projekt mappe opsætning:
+
+hoestmon/
+├── public/
+    └── iconer_illustration
+│       └── imgs
+├── src/
+│   └── components/
+│       └── ArtistCard.astro
+│       └── Menu.astro
+│       └── Footer.astro
+│   └── pages/
+│       └── index.astro
+│       └── lineup.astro
+│       └── maaltidet.astro
+│       └── praktiskInfo.astro
+│   └── styles/
+│       └── global.css
+└── package.json
+
+
+
+
 ```sh
 npm create astro@latest -- --template minimal
 ```
