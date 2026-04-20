@@ -26,6 +26,8 @@ hoestmon/
 │       └── ArtistCard.astro
 │       └── Menu.astro
 │       └── Footer.astro
+│   └── layouts/
+│       └── Layout.astro
 │   └── pages/
 │       └── index.astro
 │       └── lineup.astro
@@ -34,6 +36,28 @@ hoestmon/
 │   └── styles/
 │       └── global.css
 └── package.json
+
+## Filbeskrivelser
+
+### /public:
+Indeholder billeder, ikoner og illustrationer der bliver brugt på siden.
+
+### /src:
+Er hovedmappen som indeholder:
+/components - genanvendelige komponenter, som bruges på tværs af siderne. 
+ArtistCard.astro: Viser navn, tid og dato for hver enkel kunstner
+Menu.astro: Navigationsmenu med oversigt over de forskellige sider, der genbruges for hver side.
+Footer.astro: Footer med generel information og sociale medier der genbruges for hver side.
+/layouts
+Layout.astro: Overordnet layout (wrapper), der bruges på tværs af alle sider og definerer vores fælles struktur og opsætning af indhold herunder vores menu og footer. 
+/pages
+index.astro: Forsiden
+lineup.astro: Viser linup af kunstnerne via vores database
+maaltidet.astro: Information om det nærværende og festlige måltid på festivalen
+praktiskInfo.astro: Praktiske information om den nye placering af Høst Møn
+
+### /styles:
+/global.css: Fælles design der gør sig gældene for alle sider. 
 
 
 
