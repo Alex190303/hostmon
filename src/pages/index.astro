@@ -3,8 +3,10 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Forsiden">
-  <img src="/imgs/forside_videoimg.jpg" alt="" />
-  <h2>HVAD ER HØST MØN?</h2>
+  <img class="video_billede" src="/imgs/forside_videoimg.jpg" alt="stilbillede af forside videoen for hoest moen." />
+  <img class="overskrift_logo" src="/iconer_illustration/overskrift_logo.svg" alt="overskrift logo, hvor der staar hoest moen.">
+   <h2 class="hvad_er_hostmon">HVAD ER HØST MØN?</h2>
+  <div class="forside_grid">
   <p>Billetterne er i salg nu! Inflationen inden for æstetik, alkohol og gebyrer er stadig høj, så priserne bliver nødt til at følge med. Men det lover vi, at kvaliteten og oplevelsen også gør, og vi stiller pengene-tilbage-garanti for enorm lykke. Hvad med navnet? Det finder vi ud af. Indtil videre hedder vi det samme. Man kan tage festivalen ud af Møn, men ikke Møn ud af festivalen og alt det der.</p>
   <br />
   <p>Det er den syvende Høst Møn på ni år, for hverken verdensomspændende pandemier eller lokalt huserende markfirben kan holde os fra at skabe skønne, støjende fællesskaber på sydlige breddegrader med alle jer.</p>
@@ -16,16 +18,143 @@ import Layout from "../layouts/Layout.astro";
   <p>Du kan gøre, hvad du vil på Høst Møn - med eller uden børn og søvn. Omgivelserne er trygge, og rammerne er vide, og hvis du vil bade om natten og drikke om morgenen, så kan du gøre det. Så længe du ikke snakker foran scenen, når musikken spiller.</p>
   <br />
   <p>Det lykkedes os ikke at finde et nyt sted i 2025, så i stedet brugte vi vores kræfter på at kuratere og afvikle musik til den nystartede Impact Festival i Københavns Sydhavn sammen med de fine folk fra Trifolium. Det gør vi igen i 2026, samtidig med at vi holder Høst Møn.</p>
-  <img src="/imgs/forside_billede1.jpg" alt="" />
-  <h2>VORES LINEUP</h2>
-  <img src="/imgs/forside_billede2.jpg" alt="" />
-  <img src="/imgs/forside_billede3.jpg" alt="" />
-  <img src="/imgs/forside_billede4.jpg" alt="" />
-  <img src="/imgs/forside_billede5.jpg" alt="" />
-  <img src="/imgs/forside_billede6.jpg" alt="" />
-  <a href="/lineup">se lineup</a>
-  <button>Køb din billet</button>
-  <img src="/imgs/forside_billede7.jpg" alt="" />
-  <img src="/imgs/forside_billede8.jpg" alt="" />
-  <img src="/imgs/forside_billede9.jpg" alt="" />
+  <img class="forside_billedekolage" src="/imgs/forside_billede1.jpg" alt="en billedekollage af tre billeder. Oeverste billede er et naerbillede af en guitar. Naeste billede er et billede af en flok kocertageste i dagslys. Sidste billede er et billede af koncertgaeste i aftentimerne." />
+  </div>
+  <h2 class="vores_lineup_overskrift">VORES LINEUP</h2>
+  <div class="kunstner_loop"><img class="kunstnerloop_img0" src="/imgs/forside_billede2.jpg" alt="et billede af en kunsterne, som skal spille paa hoes moen." />
+  <img class="kunstnerloop_img1" src="/imgs/forside_billede3.jpg" alt="et billede af en kunsterne, som skal spille paa hoes moen." />
+  <img class="kunstnerloop_img2" src="/imgs/forside_billede4.jpg" alt="et billede af en kunsterne, som skal spille paa hoes moen." />
+  <img class="kunstnerloop_img3" src="/imgs/forside_billede5.jpg" alt="et billede af en kunsterne, som skal spille paa hoes moen." />
+  <img class="kunstnerloop_img4" src="/imgs/forside_billede6.jpg" alt="et billede af en kunsterne, som skal spille paa hoes moen." /></div>
+   <h3 class="kunstner_navne_loop">MAJKE VOSS. MIAW. SCHOOL OF X. BOKO YOUT(S). SNUGGLE. SPAWNER.</h3>
+  <a class="lineup_btn" href="/lineup">se lineup</a>
+  <img class="kornblomst" src="/iconer_illustration/kornblomst.svg" alt="en illustration af et hvedekorn i en haandtegnet stil.">
+  <div class="bottom_loop">
+     <img src="/imgs/forside_billede7.jpg" alt="et billede af nogle mennesker, der sider paa en halmballe i dagslys." />
+  <img src="/imgs/forside_billede8.jpg" alt="et moerkt billede af en koncert, med lys i baggrunden, som former en cirkel." />
+  <img src="/imgs/forside_billede9.jpg" alt="et billede af en flok mennesker, som staar med armene i vejret i dagslys." />
+  </div>
+    <button class="cta">Køb din billet</button>
 </Layout>
+
+<style>
+      .video_billede{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+}
+  .overskrift_logo{
+  width: min(300px, 95%);
+  justify-self: center;
+  margin-bottom: 45px;
+ } 
+ .hvad_er_hostmon{
+  margin: 3rem;
+  background-color: var(--color-overskrift-bg);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+ }
+ h2{
+  margin: 3rem;
+ }
+ p{
+  margin: 3rem;
+  width: min(67ch, 85%);
+ }
+ .forside_billedekolage{
+  width: 60%;
+  justify-self: center;
+  margin-bottom: 5rem;
+ }
+ .cta{
+  display: flex;
+ justify-content: center;
+  border: 4px solid #d4ff00;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #757474;
+    font-size: 1.1rem;
+     margin-left: 10rem;
+    margin-right: 10rem;
+ }
+ .lineup_btn{
+ display: flex;
+ justify-content: center;
+  border: 4px solid #d4ff00;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #757474;
+    font-size: 1.1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-block: 1rem;
+ }
+ .kornblomst{
+  width: 300px;
+    justify-self: center;
+ }
+ .vores_lineup_overskrift{
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  background-color: var(--color-overskrift-bg);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  justify-self: center;
+ }
+ .kunstner_loop{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+ }
+ .kunstnerloop_img1{
+  width: 140px;
+ }
+ .kunstnerloop_img2{
+  width: 133px;
+ }
+ .kunstnerloop_img3{
+  width: 133px;
+ }
+ .kunstnerloop_img4{
+  width: 77px;
+ }
+ .kunstnerloop_img0{
+  width: 90px;
+ }
+ .kunstner_navne_loop{
+  font-size: 1rem;
+  margin-top: 0.5rem;
+ }
+ .bottom_loop{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 5rem;
+ }
+  @media screen and (min-width: 800px) {
+    .forside_grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .video_billede{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+}
+ .overskrift_logo{
+  width: min(900px, 95%);
+  justify-self: center;
+  margin-bottom: 200px;
+ } 
+  }
+</style>
