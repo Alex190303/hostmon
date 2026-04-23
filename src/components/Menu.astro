@@ -12,6 +12,11 @@
     </ul>
 
     <button class="cta">Køb din billet</button>
+    <button class="burger" aria-label="Menu">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </button>
   </nav>
 </header>
 
@@ -59,4 +64,145 @@
   .cta:hover {
     background-color: black;
   }
+  /* HEADER */
+  .site-header {
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #4c4c4c, transparent);
+    z-index: 1000;
+  }
+
+  /* NAV */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+  }
+
+  /* MENU (DESKTOP) */
+  .nav-left {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+  }
+
+  .nav-left a {
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-decoration: none;
+  }
+
+  .nav-left a:hover {
+    color: #e5ff00;
+  }
+
+  /* CTA BUTTON */
+  .cta {
+    border: 4px solid #d4ff00;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    background-color: #757474;
+    font-size: 1.1rem;
+  }
+
+  .cta:hover {
+    background-color: black;
+  }
+
+  /* BURGER BUTTON */
+  .burger {
+    display: none;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: relative;
+    z-index: 1100;
+  }
+
+  .burger .line {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+    transition: 0.3s;
+  }
+
+  /* BURGER ANIMATION */
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  /*  MOBILE STYLES */
+
+  @media (max-width: 768px) {
+    /* VIS BURGER */
+    .burger {
+      display: block;
+    }
+
+    /* SKJUL MENU DEFAULT */
+    .nav-left {
+      display: none;
+    }
+
+    /* VIS MENU NÅR AKTIV */
+    .nav.active .nav-left {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 0%;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 2rem 0;
+      gap: 1.5rem;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .nav.active .nav-left li {
+      margin: 0;
+    }
+
+    .nav.active .nav-left a {
+      font-size: 1.3rem;
+      display: block;
+      text-align: left;
+      padding: 5px;
+      margin-left: 2rem;
+    }
+
+    /* CTA kan evt. gemmes eller flyttes */
+    .cta {
+      display: none;
+    }
+  }
 </style>
+
+<script is:inline>
+  const burger = document.querySelector(".burger");
+  const nav = document.querySelector(".nav");
+
+  if (burger && nav) {
+    burger.addEventListener("click", () => {
+      burger.classList.toggle("active");
+      nav.classList.toggle("active");
+    });
+  }
+</script>
