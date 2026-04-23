@@ -6,7 +6,10 @@ import Layout from "../layouts/Layout.astro";
   <img class="video_billede" src="/imgs/forside_videoimg.jpg" alt="stilbillede af forside videoen for hoest moen." />
   <img class="overskrift_logo" src="/iconer_illustration/overskrift_logo.svg" alt="overskrift logo, hvor der staar hoest moen.">
    <h2 class="hvad_er_hostmon">HVAD ER HØST MØN?</h2>
+
+
   <div class="forside_grid">
+    <div class="text_forside">
   <p>Billetterne er i salg nu! Inflationen inden for æstetik, alkohol og gebyrer er stadig høj, så priserne bliver nødt til at følge med. Men det lover vi, at kvaliteten og oplevelsen også gør, og vi stiller pengene-tilbage-garanti for enorm lykke. Hvad med navnet? Det finder vi ud af. Indtil videre hedder vi det samme. Man kan tage festivalen ud af Møn, men ikke Møn ud af festivalen og alt det der.</p>
   <br />
   <p>Det er den syvende Høst Møn på ni år, for hverken verdensomspændende pandemier eller lokalt huserende markfirben kan holde os fra at skabe skønne, støjende fællesskaber på sydlige breddegrader med alle jer.</p>
@@ -18,18 +21,32 @@ import Layout from "../layouts/Layout.astro";
   <p>Du kan gøre, hvad du vil på Høst Møn - med eller uden børn og søvn. Omgivelserne er trygge, og rammerne er vide, og hvis du vil bade om natten og drikke om morgenen, så kan du gøre det. Så længe du ikke snakker foran scenen, når musikken spiller.</p>
   <br />
   <p>Det lykkedes os ikke at finde et nyt sted i 2025, så i stedet brugte vi vores kræfter på at kuratere og afvikle musik til den nystartede Impact Festival i Københavns Sydhavn sammen med de fine folk fra Trifolium. Det gør vi igen i 2026, samtidig med at vi holder Høst Møn.</p>
+</div>
+
   <img class="forside_billedekolage" src="/imgs/forside_billede1.jpg" alt="en billedekollage af tre billeder. Oeverste billede er et naerbillede af en guitar. Naeste billede er et billede af en flok kocertageste i dagslys. Sidste billede er et billede af koncertgaeste i aftentimerne." />
   </div>
-  <h2 class="vores_lineup_overskrift">VORES LINEUP</h2>
-  <div class="kunstner_loop"><img class="kunstnerloop_img0" src="/imgs/forside_billede2.jpg" alt="et billede af en kunsterne, som skal spille paa hoes moen." />
+
+
+  <h2 class="vores_lineup_overskrift">VORES LINEUP:</h2>
+
+  <div class="kunstner_loop">
+    
+  <img class="kunstnerloop_img0" src="/imgs/forside_billede2.jpg" alt="et billede af en kunsterne, som skal spille paa hoes moen." />
   <img class="kunstnerloop_img1" src="/imgs/forside_billede3.jpg" alt="et billede af en kunsterne, som skal spille paa hoes moen." />
-  <img class="kunstnerloop_img2" src="/imgs/forside_billede4.jpg" alt="et billede af en kunsterne, som skal spille paa hoes moen." />
-  <img class="kunstnerloop_img3" src="/imgs/forside_billede5.jpg" alt="et billede af en kunsterne, som skal spille paa hoes moen." />
-  <img class="kunstnerloop_img4" src="/imgs/forside_billede6.jpg" alt="et billede af en kunsterne, som skal spille paa hoes moen." /></div>
-   <h3 class="kunstner_navne_loop">MAJKE VOSS. MIAW. SCHOOL OF X. BOKO YOUT(S). SNUGGLE. SPAWNER.</h3>
-  <a class="lineup_btn" href="/lineup">se lineup</a>
+  <img class="kunstnerloop_img1" src="/imgs/forside_billede4.jpg" alt="et billede af en kunsterne, som skal spille paa hoes moen." />
+  <img class="kunstnerloop_img1" src="/imgs/forside_billede5.jpg" alt="et billede af en kunsterne, som skal spille paa hoes moen." />
+  <img class="kunstnerloop_img0" src="/imgs/forside_billede6.jpg" alt="et billede af en kunsterne, som skal spille paa hoes moen." />
+
+</div>
+
+   <h3 class="kunstner_navne_loop">MAJKE VOSS. MIAW. SCHOOL OF X. BOKO YOUT(S). SNUGGLE. SPAWNER.MAJKE VOSS. MIAW. SCHOOL OF X. BOKO YOUT(S). SNUGGLE. SPAWNER.MAJKE VOSS. MIAW. SCHOOL OF X. BOKO YOUT(S). SNUGGLE. SPAWNER.MAJKE VOSS. MIAW. SCHOOL OF X. BOKO YOUT(S). SNUGGLE. SPAWNER.BOKO YOUT(S). SNUGGLE. SPAWNER.</h3>
+  
+   <a class="lineup_btn" href="/lineup">se lineup</a>
+
   <img class="kornblomst" src="/iconer_illustration/kornblomst.svg" alt="en illustration af et hvedekorn i en haandtegnet stil.">
-     <div class="bottom_loop">
+    
+  
+  <div class="bottom_loop">
      <img class="btmloop_img" src="/imgs/forside_billede7.jpg" alt="et billede af nogle mennesker, der sider paa en halmballe i dagslys." />
   <img class="btmloop_img" src="/imgs/forside_billede8.jpg" alt="et moerkt billede af en koncert, med lys i baggrunden, som former en cirkel." />
   <img class="btmloop_img" src="/imgs/forside_billede9.jpg" alt="et billede af en flok mennesker, som staar med armene i vejret i dagslys." />
@@ -42,6 +59,15 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
+
+.kunstnerloop_img0 {
+  height: 300px;
+}
+
+.kunstnerloop_img1 {
+  height: 300px;
+}
+
       .video_billede{
   position: absolute;
   left: 0px;
@@ -56,10 +82,11 @@ import Layout from "../layouts/Layout.astro";
  } 
  .hvad_er_hostmon{
   margin-top: 5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   background-color: var(--color-overskrift-bg);
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  width: 261px;
  }
  h2{
   margin: 3rem;
@@ -71,13 +98,10 @@ import Layout from "../layouts/Layout.astro";
     margin-right: 3rem;
  }
  .forside_billedekolage{
-  max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 copied from: https://stackoverflow.com/questions/4684304/how-can-i-resize-an-image-dynamically-with-css-as-the-browser-width-height-chang*/
-  margin-top: 3rem;
+  width: 410px;
   margin-bottom: 5rem;
-   margin-left: 10%;
-  margin-right: 10%;
+  justify-self: center;
+margin-top: 2rem;
  }
  .cta{
   border: 4px solid #d4ff00;
@@ -123,6 +147,8 @@ import Layout from "../layouts/Layout.astro";
   display: grid;
   place-items: center center;
 }
+
+
  .lineup_btn{
   border: 4px solid #d4ff00;
     padding: 0.5rem 1rem;
@@ -132,13 +158,18 @@ import Layout from "../layouts/Layout.astro";
     font-weight: bold;
     background-color: #757474;
     font-size: 1.1rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    margin-block: 1rem;
+    margin-top: 2rem;
+    display: grid;
+    place-self: center;
+    width: 150px;
+    justify-content: center;
  }
+    
+
  .kornblomst{
-  width: 300px;
+  width: 500px;
     justify-self: center;
+    margin-top: 0.5rem;
  }
  .vores_lineup_overskrift{
     margin: 0;
@@ -153,13 +184,20 @@ import Layout from "../layouts/Layout.astro";
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   width: 100%;
-  width: 300px;
   height: 300px;
  }
  .kunstner_navne_loop{
   font-size: 1rem;
   margin-top: 0.5rem;
  }
+
+
+  .btmloop_img{
+height: 300px;
+margin-top: 3rem;
+margin-bottom: 5rem;
+ }
+
   @media screen and (min-width: 800px) {
     .forside_grid{
       display: grid;
@@ -172,10 +210,23 @@ import Layout from "../layouts/Layout.astro";
   z-index: -1;
   width: 100%;
 }
+
  .overskrift_logo{
   width: min(900px, 95%);
   justify-self: center;
   margin-bottom: 200px;
  } 
+
+  .forside_billedekolage{
+  width: 700px;
+  margin-bottom: 5rem;
+
+ }
+
+  .bottom_loop{
+  display: grid;
+
+
   }
+
 </style>
