@@ -3,48 +3,247 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Maaltidet">
-  <h2>Mere end en festival</h2>
-  <img src="/public/imgs/maaltid_img1.jpg" alt="billede 1" />
-  <p>
-    Høst Møn er andet og meget mere end koncerter med havudsigt, dansefest under
-    åben himmel og camping med træk&slip.
-  </p>
-  <p>
-    Det er også en fest, der kredser - og kræser- om det fælles måltid, og Høst
-    Møns Madjunta har udfoldet nedenstående manifest for måltidet på Høst Møn.
-    Den store fællesmiddag lørdag er inkluderet i billetprisen.
-  </p>
-  <div>
-    <img src="/public/imgs/maaltid_img2.jpg" alt="billede 2" />
-    <img src="/public/imgs/maaltid_img3.jpg" alt="billede 3" />
-    <h2>Det spiser vi</h2>
-    <p>
-      Mad og råvarer er fra omegnen og fra personer vi kender. De kigger forbi
-      festivalen, så sig hej, hvis du møder dem. Råvareudbud og sæson afgør
-      menuen. Menuen for Høst Møns måltider er tilrettelagt ud fra de
-      producenter, der ligger i omegnen, og som har råvarer, der er i sæson.
-    </p>
-    <p>
-      Det sætter et naturligt benspænd for, hvad der er på menuen, og skaber et
-      måltid, der afspejler årstiden. Råvarer er så lidt forarbejdede som muligt
-      – og så bruger vi det hele. Det er for os vigtigt at arbejde med en
-      tilgang om, at hele råvaren bruges, så køkkenet ikke efterlader et
-      unødvendigt spild, der ellers kunne have været til nytte et andet sted.
-    </p>
+  <div class="card3">
+    <img
+      src="public/iconer_illustration/logo_maane.svg"
+      class="imgmoon3"
+      alt="Måne illustration"
+    />
+    <h1 class="overskrifth1">Måltidet</h1>
+  </div>
+  <div class="maaltid-grid">
+    <h2 class="overskrift">Mere end en festival</h2>
+
+    <img class="billeder" src="/imgs/maaltid_img1.jpg" alt="billede 1" />
+
+    <div class="tekst">
+      <p>
+        Høst Møn er andet og meget mere end koncerter med havudsigt, dansefest
+        under åben himmel og camping med træk&slip.
+      </p>
+      <p>
+        Det er også en fest, der kredser - og kræser- om det fælles måltid, og
+        Høst Møns Madjunta har udfoldet nedenstående manifest for måltidet på
+        Høst Møn. Den store fællesmiddag lørdag er inkluderet i billetprisen.
+      </p>
+    </div>
+
+    <img class="icon" src="/iconer_illustration/kornblomst.svg" alt="" />
+  </div>
+  <div class="detvispiser">
+    <div class="indhold">
+      <h2 class="overskrift2">DET SPISER VI:</h2>
+
+      <div class="tekst">
+        <p>
+          Mad og råvarer er fra omegnen og fra personer vi kender. De kigger
+          forbi festivalen, så sig hej, hvis du møder dem. Råvareudbud og sæson
+          afgør menuen. Menuen for Høst Møns måltider er tilrettelagt ud fra de
+          producenter, der ligger i omegnen, og som har råvarer, der er i sæson.
+        </p>
+        <p>
+          Det sætter et naturligt benspænd for, hvad der er på menuen, og skaber
+          et måltid, der afspejler årstiden. Råvarer er så lidt forarbejdede som
+          muligt – og så bruger vi det hele. Det er for os vigtigt at arbejde
+          med en tilgang om, at hele råvaren bruges, så køkkenet ikke efterlader
+          et unødvendigt spild, der ellers kunne have været til nytte et andet
+          sted.
+        </p>
+      </div>
+
+      <div class="billeder">
+        <img src="/imgs/maaltid_img2.jpg" alt="billede 2" />
+        <img src="/imgs/maaltid_img3.jpg" alt="billede 3" />
+      </div>
+    </div>
   </div>
 
-  <h2>Sådan spiser vi</h2>
-  <p>
-    Vi spiser sammen. Børn, voksne, dem der har lavet maden, dem der spiller
-    musikken, og dem der står bag baren. Måltidet skal være en sanselig
-    oplevelse, og maden skal nydes. Vi vil gerne mindske affodrings-buffeter,
-    hvor maden kun er til for at mætte.
-  </p>
-  <p>
-    Vi har sat os for, at selvom vi er mange, der skal spise sammen på samme
-    tid, skal det være et sted for fællesskab og et fælles sted at opleve det
-    unikt tilrettelagte Høst Møn måltid.
-  </p>
-  <img src="/public/imgs/maaltid_img4.jpg" alt="billede 4" />
-  <img src="/public/imgs/maaltid_img5.jpg" alt="billede 5" />
+  <div class="saadan-spiser">
+    <div class="indhold">
+      <div class="tekst">
+        <h2 class="overskrift">SÅDAN SPISER VI:</h2>
+        <div class="sidstep">
+          <p>
+            Vi spiser sammen. Børn, voksne, dem der har lavet maden, dem der
+            spiller musikken, og dem der står bag baren. Måltidet skal være en
+            sanselig oplevelse, og maden skal nydes. Vi vil gerne mindske
+            affodrings-buffeter, hvor maden kun er til for at mætte.
+          </p>
+          <p>
+            Vi har sat os for, at selvom vi er mange, der skal spise sammen på
+            samme tid, skal det være et sted for fællesskab og et fælles sted at
+            opleve det unikt tilrettelagte Høst Møn måltid.
+          </p>
+        </div>
+      </div>
+
+      <img class="icon" src="/iconer_illustration/kornblomst.svg" alt="" />
+
+      <div class="billeder">
+        <img src="/imgs/maaltid_img4.jpg" alt="billede 4" />
+        <img src="/imgs/maaltid_img5.jpg" alt="billede 5" />
+      </div>
+    </div>
+  </div>
 </Layout>
+
+<style>
+  .maaltid-grid {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .overskrift {
+    display: inline-block;
+    background: #777;
+    color: #d4ff00;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    width: fit-content;
+  }
+
+  .tekst {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 65ch;
+  }
+
+  .icon {
+    width: 400px;
+    max-width: 40vw;
+    height: auto;
+    display: block;
+    margin-left: auto;
+  }
+
+  .detvispiser {
+    background: #ddd;
+    padding: 3rem 2rem 8rem;
+  }
+
+  .indhold {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .billeder img {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 12px;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .saadan-spiser {
+    padding: 2rem 1rem;
+  }
+
+  @media (min-width: 800px) {
+    .maaltid-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto 1fr auto;
+      align-items: start;
+    }
+
+    .overskrift2 {
+      grid-column: 1 / 2;
+      background: #777;
+      margin-left: 3.5rem;
+      padding: 1rem 2rem;
+      font-size: 1.8rem;
+      width: fit-content;
+    }
+
+    .billeder {
+      grid-column: 1 / 2;
+      grid-row: 2;
+    }
+
+    .tekst {
+      grid-column: 2 / 3;
+      grid-row: 2;
+      align-self: center;
+    }
+
+    .icon {
+      grid-column: 2 / 3;
+      grid-row: 3;
+      justify-self: end;
+    }
+
+    /********** det vi spiser  ***************/
+
+    .detvispiser .indhold {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .detvispiser .billeder {
+      position: relative;
+      max-width: 500px;
+    }
+
+    .detvispiser .billeder img:first-child {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* nederste billede (overlap) */
+    .detvispiser .billeder img:last-child {
+      position: absolute;
+      bottom: -100px; /* mindre overlap nedad */
+      right: -20px; /* flyt det lidt ud til siden */
+      width: 65%; /* gør det lidt mindre */
+      z-index: 2;
+    }
+
+    /********** det vi spiser  ***************/
+
+    .saadan-spiser {
+      background: linear-gradient(135deg, #f07c5a, #f59c7a);
+      position: relative;
+      padding: 6rem 4rem;
+    }
+
+    .saadan-spiser .indhold {
+      grid-template-columns: 1fr 1fr;
+      position: relative;
+    }
+
+    .saadan-spiser .tekst {
+      grid-column: 1 / 2;
+    }
+
+    /* billeder overlap */
+    .saadan-spiser .billeder {
+      position: relative;
+      max-width: 500px;
+      justify-self: end;
+      place-self: start;
+      grid-column: 2 / 3;
+    }
+
+    .saadan-spiser .billeder img:last-child {
+      position: absolute;
+      bottom: -90px;
+      right: -80px;
+      width: 70%;
+    }
+
+    /* vores kornblomst */
+    .saadan-spiser .icon {
+      position: absolute;
+      top: 4rem;
+      right: 6rem;
+      width: 200px;
+      margin-bottom: 2rem;
+    }
+
+    .sidstep {
+      margin-top: 2rem;
+    }
+  }
+</style>
