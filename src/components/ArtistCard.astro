@@ -3,10 +3,11 @@
 const { artist, img, name, date_time } = Astro.props;
 ---
 
-<article>
+<article
+>
   <img src={artist.img} alt="billede" />
   <h2>{artist.name}</h2>
-  <p>Tid og dato: {artist.date_time}</p>
+  <p>{artist.date_time}</p>
 </article>
 
 
@@ -35,6 +36,13 @@ h2 {
   text-align: center;
   background-color: #515151;
   border-radius: 40px;
+
+   cursor: pointer;
+  transition: 0.2s;
+}
+
+h2:hover {
+    transform: translate(-50%) scale(1.10);
 }
 
 article {

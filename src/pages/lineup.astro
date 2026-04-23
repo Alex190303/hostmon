@@ -17,7 +17,7 @@ const data = await fetch(url, options).then((res) => res.json());
 console.log(data);
 ---
 
-<html lang="en">
+<html lang="da">
   <header> 
   </header>
 
@@ -25,17 +25,21 @@ console.log(data);
 
 <Layout title="Lineup">
 
-  <h1>Line Up</h1>
+ <div class="card1">
+  <img src="/iconer_illustration/logo_maane.svg" class="imgmoon" alt="Måne illustration">
+  <h1 class="overskrift">Line Up</h1>
+  </div>
 
   <div class="bgcolorlineup">
 
-     <section class="filtrering">
+     <div class="filtrering">
 
+     <img class="logo1" src="/iconer_illustration/logo_maane.svg" alt="korn">
       <button>Fredag</button>
       <button>Lørdag</button>
       <button>Alle Dage</button>
 
-    </section>
+     </div>
 
 
 <div class="artistgrid">
@@ -45,7 +49,7 @@ console.log(data);
 </div>
 </div>
 
-<a href="#"><img class="korn" src="/public/iconer_illustration/kornblomst.svg" alt="korn"></a>
+<img class="korn" src="/iconer_illustration/kornblomst.svg" alt="korn">
 
 </Layout>
 
@@ -54,12 +58,13 @@ console.log(data);
 
 
 <style>
+
   .filtrering {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  width: 360px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 516px;
   padding-right: 1rem;
-    padding-left: 120px;
+    padding-left: 15px;
     padding-bottom: 2rem;
      font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -69,7 +74,130 @@ console.log(data);
   color: white;
   Background-color: #787878;
   margin-bottom: 3rem;
-  height: 60px; 
+  height: 90px; 
+  }
+
+button {
+  padding-top: 1.3rem;
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+      font-weight: 600;
+      text-decoration: underline;
+}
+
+.bgcolorlineup {
+Background-color: #d0d0d0;
+padding-bottom: 6rem;
+margin-bottom: 3rem;
+  }
+
+  button:hover {
+    color: #E5FF00;
+  }
+
+  .korn {
+    width: 500px;
+    justify-self: center;
+    padding-bottom: 5rem;
+  }
+
+  .logo1 {
+    width: 80px;
+    padding-top: 0.7rem;
+  }
+
+    .card1{
+  position: relative;
+ height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  }
+
+  .imgmoon{
+  position: absolute;
+  width: 330px;
+  left: 20%;
+}
+
+.overskrift{
+color:#e5ff00; 
+  font-size: 4rem;
+  position: relative;
+  right: 17%;
+   z-index: 1;
+}
+
+ /* h1 {
+  justify-self: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #e5ff00;
+font-size: 100px;
+  }
+
+   .logo2 {
+    width: 280px;
+      position: absolute;
+  left: 85px;
+  top: 65px;
+  z-index: -1;
+      margin-top: 5rem;
+  } */
+
+  .overskiftGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    
+  }
+
+  .artistgrid {
+justify-items: center;
+  }
+
+  @media screen and (min-width: 800px) {
+
+   .artistgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+      gap: 5rem;
+  margin: 0 auto;
+  }
+
+  .bgcolorlineup {
+padding-bottom: 6rem;
+margin-bottom: 3rem;
+  }
+
+  .bgcolorlineup {
+Background-color: #d0d0d0;
+padding-bottom: 6rem;
+margin-bottom: 3rem;
+}
+
+  .filtrering {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 400px;
+  padding-right: 1rem;
+    padding-left: 15px;
+    padding-bottom: 2rem;
+     font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: white;
+  Background-color: #787878;
+  margin-bottom: 3rem;
+  height: 80px; 
   }
 
 button {
@@ -78,25 +206,15 @@ button {
   border: none;
   font-size: 1rem;
   color: white;
+      font-weight: 600;
+      text-decoration: underline;
 }
 
-  .bgcolorlineup {
+.bgcolorlineup {
 Background-color: #d0d0d0;
 padding-bottom: 6rem;
 margin-bottom: 3rem;
   }
-
-
-  /*@media (max-width: 700px) {*/
-  .artistgrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-self: center;
-      gap: 5rem;
-  margin: 0 auto;
-  }
-
-  /*}*/
 
   button:hover {
     color: #E5FF00;
@@ -108,5 +226,61 @@ margin-bottom: 3rem;
     padding-bottom: 5rem;
   }
 
+  .logo1 {
+    width: 60px;
+    padding-top: 1rem;
+  }
+
+  h1 {
+  justify-self: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #e5ff00;
+font-size: 150px;
+  }
+
+
+  .overskiftGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    
+  }
+
+  .logo2 {
+    width: 380px;
+      position: absolute;
+  left: 320px;
+  top: 15px;
+  z-index: -1;
+      margin-top: 5rem;
+  }
+
+}
+
+
+@media (min-width: 800px){
+.blomst{
+
+top: -140px;
+left: -20px;
+}
+
+    .card1{
+      height: 500px;
+    }
+
+.imgmoon{
+  width: 500px;
+  left: 40%;
+}
+
+.overskrift{
+   font-size: 7rem;
+     right: 4%;
+}
+}
 
 </style>
